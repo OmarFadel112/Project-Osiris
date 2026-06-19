@@ -20,20 +20,20 @@ Run the script directly via terminal.
 
 ```bash
 # Standard evaluation (Queries HIBP securely)
-python3 password_strength.py -p "MyP@ssw0rd!"
+python3 osiris.py -p "MyP@ssw0rd!"
 
 # Verbose breakdown
-python3 password_strength.py -p "MyP@ssw0rd!" -v
+python3 osiris.py -p "MyP@ssw0rd!" -v
 
 # Offline / Air-Gapped mode (Skips network API, uses local corpus)
-python3 password_strength.py -p "MyP@ssw0rd!" -o
+python3 osiris.py -p "MyP@ssw0rd!" -o
 ```
 
 ### Option B: Standalone Executable
 For zero-dependency environments, compile the tool using PyInstaller.
 
 ```bash
-python -m PyInstaller --onefile --name osiris --clean --strip --log-level WARN password_strength.py
+python -m PyInstaller --onefile --name osiris --clean --strip --log-level WARN osiris.py
 ```
 
 Run the compiled binary:
@@ -72,4 +72,5 @@ This tool utilizes strict `sys.exit()` codes to communicate seamlessly with orch
 ```
 
 ## 👨‍💻 Author
-**Omar Fadel**
+**Omar Elwahy**
+Cybersecurity & Networks / Computer Science
